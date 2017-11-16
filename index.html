@@ -3,30 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Tables Page</title>
-<<<<<<< Updated upstream
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/stylesheet.css">
-
-</head>
-<body>
-    <div class="jumbotron">
-  <h1 class="display-3">Hot Restaurant</h1>
-  <hr class="my-4">
-  <h2>We only have 5 tables! Book your seat before they are all gone!</h2>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="./tables.html" role="button">View Tables</a>
-    <a class="btn btn-primary btn-lg" href="./reserve.html" role="button">Make Reservation</a>
-  </p>
-</div>
-<script type="text/javascript">
-  $("#search-btn").on("click", function() {
-    var searchedtable = $("#table-search").val().trim();
-
-    searchedtable = searchedtable.replace(/\s+/g, "").toLowerCase();
-
-=======
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     
@@ -50,7 +26,6 @@
   $("#search-btn").on("click", function() {
     var searchedtable = $("#table-search").val().trim();
     searchedtable = searchedtable.replace(/\s+/g, "").toLowerCase();
->>>>>>> Stashed changes
     $.get("/api/" + searchedtable, function(data) {
       console.log(data);
       if (data) {
@@ -68,8 +43,4 @@
   });
 </script>
 </body>
-<<<<<<< Updated upstream
 </html>
-=======
-</html>
->>>>>>> Stashed changes
