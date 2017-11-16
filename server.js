@@ -7,7 +7,7 @@ var path = require("path");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -21,21 +21,21 @@ var tables = [
     name: "Yoda",
     phone: "123-456-7890",
     customerId: 900,
-    email: test@test.com
+    email: "test@test.com"
   },
   {
     routeName: "darthmaul",
     name: "Darth Maul",
     phone: "123-456-7890",
     customerId: 200,
-    email: test1@test.com
+    email: "test1@test.com"
   },
   {
     routeName: "obiwankenobi",
     name: "Obi Wan Kenobi",
     phone: "123-456-7890",
     customerId: 55,
-    email: test2@test.com
+    email: "test2@test.com"
   }
 ];
 
