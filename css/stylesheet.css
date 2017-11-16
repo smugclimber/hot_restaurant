@@ -1,0 +1,9 @@
+body{
+    background-image: url(../images/background.jpg);
+}
+
+@font-face { font-family: Krabby Patty; src: url('Krabby_Patty.ttf'); } 
+
+h1{
+   font-family: Krabby Patty; 
+}
